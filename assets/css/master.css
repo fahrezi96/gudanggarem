@@ -68,6 +68,9 @@ aside {
     border-left: solid 3px transparent; }
     aside nav > ul > li > a:hover {
       border-left: solid 3px #EFD898; }
+  aside nav > ul > li > a.active {
+    background-color: #060034;
+    border-left: solid 3px #EFD898; }
   aside ul {
     padding: 0;
     margin: 0; }
@@ -87,6 +90,8 @@ aside {
         aside ul li a:hover {
           color: #d8c592;
           text-decoration: none;
+          background-color: #060034; }
+        aside ul li a.active {
           background-color: #060034; }
       aside ul li li a {
         padding: 5px 5px 5px 40px; }
@@ -175,5 +180,30 @@ table.dataTable thead th:first-child {
 
 table.dataTable thead th:last-child {
   border-top-right-radius: 5px; }
+
+.modal-header {
+  background-color: #1A1448;
+  color: #EFD898; }
+  .modal-header .close {
+    opacity: 1;
+    color: #EFD898; }
+
+.modal-body .dataTables_filter, .modal-body .dataTables_info, .modal-body .dataTables_paginate {
+  display: none; }
+
+.modal-footer {
+  padding: 0; }
+  .modal-footer button {
+    margin: 0;
+    width: 50%;
+    border: none;
+    color: #EFD898;
+    padding: 15px; }
+    .modal-footer button.false {
+      background-color: #B92025;
+      border-bottom-left-radius: 4px; }
+    .modal-footer button.true {
+      background-color: #004282;
+      border-bottom-right-radius: 4px; }
 
 /*# sourceMappingURL=master.css.map */

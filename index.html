@@ -35,7 +35,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:;">
+                        <a href="javascript:;" class="active">
                             <i class="fas fa-toolbox"></i>
                             <span>Master</span>
                         </a>
@@ -45,7 +45,7 @@
                             <li><a href="javascript:;">Event</a></li>
                             <li><a href="javascript:;">Lamp</a></li>
                             <li><a href="javascript:;">Question (Survey)</a></li>
-                            <li><a href="javascript:;">Venue</a></li>
+                            <li><a href="javascript:;" class="active">Venue</a></li>
                             <li><a href="javascript:;">Program</a></li>
                             <li><a href="javascript:;">Employee</a></li>
                             <li><a href="javascript:;">Area (WO, RO, AO)</a></li>
@@ -118,7 +118,7 @@
                     </div>
                     <div class="card-body">
                         <div class="action-section mb-2">
-                            <a href="javascript:;">Add New</a>
+                            <a href="javascript:;" data-toggle="modal" data-target="#exampleModal">Add New</a>
                             <a href="javascript:;">Export</a>
                         </div>
                         <!-- <div class="action-n-filter">
@@ -212,6 +212,165 @@
         </main>
     </div>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">ID</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="001" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Program Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Activity Type</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>MDS BRAND</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Activity Format</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>MDS REGULAR</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Program Description</label>
+                        <div class="col-sm-8">
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Period</label>
+                        <div class="col-sm-8">
+                            <div class="d-flex align-items-center">
+                                <input type="text" class="form-control">
+                                <span class="ml-1 mr-1">S/D</span>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Main Brand</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>16 GGI</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Main Brand Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Gudang Garam International" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Main Brand Category</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>SKM HT</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Brand Pair</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>12 GSC</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Brand Pair Name</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" placeholder="Gudang Garam Signature" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">SKU Brand Pair Category</label>
+                        <div class="col-sm-8">
+                            <select class="form-control">
+                                <option>SKM HT</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Set Target</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                    <fieldset class="border p-2">
+                        <legend class="w-auto pl-1 pr-1">Mini Survey</legend>
+                        <div class="fs-body">
+                            <div class="action-section mb-2 text-right">
+                                <a href="javascript:;" data-toggle="modal" data-target="#exampleModal">Add Question</a>
+                            </div>
+                            <table id="table_modal_id" class="display">
+                                <thead>
+                                    <tr>
+                                        <th>Question ID</th>
+                                        <th>Question</th>
+                                        <th>Answer</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Harga</td>
+                                        <td><a href="javascript:;">View Answer</a></td>
+                                        <td>z</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Harga</td>
+                                        <td><a href="javascript:;">View Answer</a></td>
+                                        <td>z</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="false" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="true">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -229,6 +388,8 @@
             $('#table_id').DataTable({
                 "pageLength": 5
             });
+
+            $('#table_modal_id').DataTable();
         });
     </script>
 

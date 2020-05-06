@@ -106,6 +106,11 @@ aside {
         }
     }
 
+    nav > ul > li > a.active {
+        background-color: $dark-blue;
+        border-left: solid 3px $gold;
+    }
+
     ul {
         padding: 0;
         margin: 0;
@@ -130,6 +135,10 @@ aside {
                 &:hover {
                     color: $dark-gold;
                     text-decoration: none;
+                    background-color: $dark-blue;
+                }
+
+                &.active {
                     background-color: $dark-blue;
                 }
             }
@@ -255,4 +264,43 @@ table.dataTable thead th:first-child {
 
 table.dataTable thead th:last-child {
     border-top-right-radius: 5px;
+}
+
+.modal-header {
+    background-color: $deep-blue;
+    color: $gold;
+
+    .close {
+        opacity: 1;
+        color: $gold;
+    }
+}
+
+.modal-body {
+    .dataTables_filter, .dataTables_info, .dataTables_paginate {
+        display: none;
+    }
+}
+
+.modal-footer {
+    padding: 0;
+
+    button {
+        margin: 0;
+        width: 50%;
+        border: none;
+        color: $gold;
+        padding: 15px;
+
+        &.false {
+            background-color: $red;
+            border-bottom-left-radius: 4px
+        }
+
+        &.true {
+            background-color: $blue;
+            border-bottom-right-radius: 4px;
+        }
+    }
+
 }
