@@ -89,6 +89,7 @@ aside {
     width: 270px;
     min-height: 100vh;
     padding-bottom: 30px;
+    transition: all .2s;
 
     .company-logo {
         background-color: $red;
@@ -172,6 +173,7 @@ header {
     width: calc(100% - 270px);
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
     z-index: 2;
+    transition: all .2s;
 }
 
 .toggle-sidenav a {
@@ -413,4 +415,23 @@ select {
     background-image: url(./../images/calendar.png);
     background-repeat: no-repeat;
     background-position: 98% center;
+}
+
+.has-ul .fa-angle-down {
+    float: right;
+    margin-top: 5px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.has-ul.active .fa-angle-down {
+    transform: rotate(180deg);
+}
+
+aside.zero-width {
+    width: 0;
+}
+
+header.full-width {
+    width: 100%;
 }
