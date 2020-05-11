@@ -8,6 +8,45 @@ $dark-gold: #d8c592;
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
+table.dataTable thead .sorting {
+    background-image: url("./../images/sort.png");
+    background-position-x: 95%;
+}
+
+table.dataTable thead .sorting_asc {
+    background-image: url("./../images/sort-asc.png");
+    background-position-x: 95%;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url("./../images/sort-desc.png");
+    background-position-x: 95%;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-weight: 600;
+
+    & > a {
+        color: $deep-blue;
+        font-weight: 600;
+    }
+}
+
+td > a {
+    color: $blue;
+    text-decoration: underline;
+
+    &:hover {
+        color: $deep-blue;
+        text-decoration: underline;
+    }
+}
+
+
 a:hover {
     text-decoration: none;
 }
@@ -99,6 +138,7 @@ aside {
         position: fixed;
         width: 270px;
         box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
     }
 
     nav {
@@ -274,6 +314,10 @@ header {
             border-radius: 5px;
             border: solid 2px lightgray;
             width: 250px;
+            background-image: url(./../images/icon_search.png);
+            background-repeat: no-repeat;
+            background-position: 2% center;
+            padding-left: 25px;
         }
     }
 }
